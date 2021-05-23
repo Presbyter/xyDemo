@@ -13,6 +13,6 @@ sequenceDiagram
     服务器B->>服务器C:"gRPC stream request"
     服务器C->>服务器D:"HTTP request"
     服务器D-->>服务器C:"HTTP response"
-    服务器C-->>服务器B:"gRPC string response"
+    服务器C-->>服务器B:"gRPC stream response"
     服务器B-->>客户端:"HTTP response"
 ```
