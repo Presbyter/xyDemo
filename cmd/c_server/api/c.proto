@@ -1,0 +1,14 @@
+syntax = "proto3";
+option go_package = "./;api";
+package main;
+
+service CService{
+  rpc Forward(stream ForwardReq)returns(stream ForwardResp);
+}
+
+message ForwardReq{
+  string UserName = 1;
+}
+message ForwardResp{
+  string Response = 1;
+}
